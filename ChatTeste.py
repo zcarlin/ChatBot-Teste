@@ -48,7 +48,7 @@ def iniciar_chat_semantico(df):
         indice_mais_proximo = int(similaridades.argmax())
         confianca = float(similaridades.max())
 
-        if confianca < 0.55:
+        if confianca < 0.65:
             print("Bot: Desculpe, não entendi sua pergunta. Pode reformular?")
         else:
             resposta = respostas[indice_mais_proximo]
@@ -57,7 +57,7 @@ def iniciar_chat_semantico(df):
 # ===============================
 # Execução principal
 if __name__ == "__main__":
-    caminho_dados = r"C:\Users\aluno vespertino\Desktop\Carlos\Carlos\Dados\dataset_expandido_balanceado.csv"
+    caminho_dados = r"C:\Users\eliel\Desktop\ChatBot-Teste\Dados\dataset_expandido_balanceado.csv"
     
     if not os.path.exists(caminho_dados):
         print(f"❌ Dataset não encontrado: {caminho_dados}")
