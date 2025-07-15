@@ -1,0 +1,1 @@
+# Gere o modelo_semantico.pkl com treino_chatbot novamente depois de baixar o repositorio
